@@ -5,7 +5,12 @@ body {
     color: #fff; /* 文字色を白に */
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: center; /* 全体のテキストを中央揃え */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* アイテムを中央揃え */
+    justify-content: center; /* 中央揃え */
+    height: 100vh; /* ビューポートの高さに合わせる */
 }
 
 /* 見出し（h1）のスタイル */
@@ -13,6 +18,7 @@ h1 {
     color: #4CAF50;
     font-size: 2.5em;
     margin-top: 20px;
+    text-align: center; /* 見出しも中央揃え */
 }
 
 /* 段落（p）のスタイル */
@@ -53,6 +59,7 @@ input[type="text"] {
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #ccc;
+    text-align: center; /* 入力ボックス内も中央揃え */
 }
 
 /* 結果表示のスタイル */
