@@ -1,30 +1,35 @@
-/* style.css */
+/* bodyのスタイル */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #000; /* 背景色を黒に */
+    color: #fff; /* 文字色を白に */
     margin: 0;
     padding: 0;
-    text-align: left;
+    text-align: center;
 }
 
+/* 見出し（h1）のスタイル */
 h1 {
     color: #4CAF50;
     font-size: 2.5em;
     margin-top: 20px;
 }
 
+/* 段落（p）のスタイル */
 p {
     font-size: 1.2em;
     line-height: 1.6;
     max-width: 800px;
     margin: 20px auto;
     padding: 10px;
-    background-color: #fff;
+    background-color: #fff; /* 段落背景を白に */
+    color: #000; /* 文字色を黒に */
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* 左揃えに */
 }
 
+/* ボタンのスタイル */
 button {
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -39,6 +44,7 @@ button:hover {
     background-color: #45a049;
 }
 
+/* 入力フィールドのスタイル */
 input[type="text"] {
     padding: 10px;
     font-size: 1.1em;
@@ -49,6 +55,7 @@ input[type="text"] {
     border: 1px solid #ccc;
 }
 
+/* 結果表示のスタイル */
 #result {
     font-size: 1.2em;
     font-weight: bold;
