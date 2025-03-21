@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     align-items: center; /* アイテムを中央揃え */
     justify-content: center; /* 中央揃え */
+    justify-content: flex-start; /* 上に揃える */
     height: 100vh; /* ビューポートの高さに合わせる */
 }
 
