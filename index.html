@@ -22,17 +22,23 @@
     <script>
         function checkAnswer() {
             const correctAnswer = "わたしというこをもうけた";  // 正解
-            const userAnswer = document.getElementById("answer").value;
-            const result = document.getElementById("result");
+            const userAnswer = document.getElementById("answer").value.trim();  // ユーザーの入力
+        
+            const resultElement = document.getElementById("result");
 
+            // 結果表示を表示
             if (userAnswer === correctAnswer) {
-                result.textContent = "正解！🎉";
-                result.style.color = "green";
+                resultElement.textContent = "正解です！";
+                resultElement.style.color = "green";  // 正解なら緑色
             } else {
-                result.textContent = "違います❌";
-                result.style.color = "red";
+                resultElement.textContent = "不正解です。もう一度試してください。";
+                resultElement.style.color = "red";  // 不正解なら赤色
             }
+
+            // 結果を表示する
+            resultElement.style.display = "block";  // 結果ボックスを表示
         }
     </script>
+
 </body>
 </html>
